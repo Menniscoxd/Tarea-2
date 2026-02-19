@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Ambiental - Desarrollo Sustentable</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f7f6;
+    color:#222;
+    scroll-behavior:smooth;
+}
+
+header{
+    background:#1b5e20;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+/* MENU */
+nav{
+    background:#2e7d32;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    flex-wrap:wrap;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 14px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#1b5e20;
+    transform:scale(1.1);
+}
+
+/* SECCIONES */
+section{
+    padding:60px 12%;
+    min-height:100vh;
+    animation:fade 1s ease;
+}
+
+#inicio{background:#f1f8e9;}
+#sustentable{background:#e8f5e9;}
+#economia{background:#e0f2f1;}
+#contaminacion{background:#fff3e0;}
+#agenda{background:#e3f2fd;}
+#multimedia{background:#ede7f6;}
+#archivos{background:#fce4ec;}
+#contacto{background:#f9fbe7;}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(30px);} 
+    to{opacity:1; transform:translateY(0);} 
+}
+
+h2{
+    color:#1b5e20;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    margin-top:25px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+iframe{
+    width:100%;
+    height:350px;
+    border-radius:10px;
+    border:none;
+}
+
+img{
+    width:100%;
+    border-radius:12px;
+    margin-top:20px;
+    transition:0.3s;
+}
+
+img:hover{
+    transform:scale(1.02);
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Proyecto Ambiental</h1>
+<p>Nombre del Alumno | Materia | Grupo | 2026</p>
+</header>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#sustentable">Sustentable</a>
+<a href="#economia">Economía</a>
+<a href="#contaminacion">Contaminación</a>
+<a href="#agenda">Agenda 21</a>
+<a href="#multimedia">Multimedia</a>
+<a href="#archivos">Archivos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio">
+<h2>Inicio</h2>
+<div class="card">
+<p>Este sitio web fue elaborado como proyecto escolar para analizar la relación entre el desarrollo sustentable, la economía y el medio ambiente.</p>
+
+<p>Su objetivo es fomentar la conciencia ambiental y promover prácticas responsables.</p>
+
+<p>Consulta más información en:
+<a href="https://www.un.org/es/climatechange" target="_blank">Naciones Unidas</a></p>
+
+<img src="bosque.jpg">
+</div>
+</section>
+
+<!-- DESARROLLO SUSTENTABLE -->
+<section id="sustentable">
+<h2>Desarrollo Sustentable</h2>
+<div class="card">
+<p>Busca satisfacer las necesidades actuales sin comprometer a las futuras generaciones.</p>
+
+<h3>Los Tres Pilares</h3>
+<ul>
+<li><b>Ambiental:</b> Conservación de recursos.</li>
+<li><b>Social:</b> Equidad y bienestar.</li>
+<li><b>Económico:</b> Rentabilidad responsable.</li>
+</ul>
+
+<h3>Importancia</h3>
+<ul>
+<li>Reduce el cambio climático.</li>
+<li>Garantiza recursos.</li>
+<li>Mejora la calidad de vida.</li>
+</ul>
+
+<img src="solar.jpg">
+</div>
+</section>
+
+<!-- ECONOMIA -->
+<section id="economia">
+<h2>Economía y Medio Ambiente</h2>
+<div class="card">
+<p>La economía depende del ambiente como fuente de recursos y receptor de residuos.</p>
+
+<h3>Externalidades</h3>
+<p>La contaminación es un ejemplo claro.</p>
+
+<h3>Economía Circular</h3>
+<ul>
+<li>Reducir</li>
+<li>Reutilizar</li>
+<li>Reciclar</li>
+<li>Recuperar</li>
+</ul>
+
+<img src="reciclaje.jpg">
+</div>
+</section>
+
+<!-- CONTAMINACION -->
+<section id="contaminacion">
+<h2>Contaminación Atmosférica</h2>
+<div class="card">
+<p>La contaminación afecta la salud y los ecosistemas.</p>
+
+<h3>Causas</h3>
+<ul>
+<li>Industria</li>
+<li>Transporte</li>
+<li>Fósiles</li>
+<li>Agricultura</li>
+<li>Deforestación</li>
+</ul>
+
+<h3>Soluciones</h3>
+<ul>
+<li>Regulación</li>
+<li>Transporte eficiente</li>
+<li>Tecnologías limpias</li>
+</ul>
+
+<img src="smog.jpg">
+</div>
+</section>
+
+<!-- AGENDA 21 -->
+<section id="agenda">
+<h2>Agenda 21</h2>
+<div class="card">
+<p>Plan internacional aprobado en 1992 para el desarrollo sostenible.</p>
+
+<h3>Objetivos</h3>
+<ul>
+<li>Reducir pobreza</li>
+<li>Proteger ambiente</li>
+<li>Educación ambiental</li>
+<li>Desarrollo local</li>
+</ul>
+
+<h3>Áreas</h3>
+<ul>
+<li>Agua</li>
+<li>Residuos</li>
+<li>Energías renovables</li>
+<li>Participación ciudadana</li>
+</ul>
+
+<img src="tierra.jpg">
+</div>
+</section>
+
+<!-- MULTIMEDIA -->
+<section id="multimedia">
+<h2>Multimedia</h2>
+<div class="card">
+
+<h3>Video</h3>
+<iframe src="https://www.youtube.com/embed/1kUE0BZtTRc"></iframe>
+
+<h3>Audio</h3>
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+</audio>
+
+<h3>Mapa</h3>
+<iframe src="https://www.google.com/maps?q=Monterrey+Nuevo+Leon&output=embed"></iframe>
+
+</div>
+</section>
+
+<!-- ARCHIVOS -->
+<section id="archivos">
+<h2>Archivos</h2>
+<div class="card">
+
+<h3>Subir Archivo</h3>
+<input type="file"><br><br>
+<button>Enviar</button>
+
+<h3>Descargar</h3>
+<ul>
+<li><a href="El Desarrollo Sustentable.pdf" target="_blank">Desarrollo Sustentable</a></li>
+<li><a href="La Economía y el Ambiente.pdf" target="_blank">Economía y Ambiente</a></li>
+<li><a href="CAUSAS (1).pdf" target="_blank">Causas</a></li>
+</ul>
+
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+<h2>Contacto</h2>
+<div class="card">
+
+<form>
+<label>Nombre:</label><br>
+<input type="text" required><br><br>
+
+<label>Correo:</label><br>
+<input type="email" required><br><br>
+
+<label>Mensaje:</label><br>
+<textarea rows="5"></textarea><br><br>
+
+<button type="submit">Enviar</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>Proyecto Escolar Ambiental | 2026 | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
